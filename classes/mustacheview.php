@@ -21,6 +21,11 @@ class MustacheView
 		$this->values[$name] = $value;
 	}
 	
+	public function __toString()
+	{
+		return $this->render();
+	}
+	
 	public function render()
 	{
 		$m = new Mustache;
