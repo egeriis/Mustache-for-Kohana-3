@@ -12,7 +12,7 @@ class MustacheView
 	
 	public function __get($key)
 	{
-		if (empty($this->values[$key])) return false;
+		if (!isset($this->values[$key])) return false;
 		return $this->values[$key];
 	}
 	
