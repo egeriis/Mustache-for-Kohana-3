@@ -10,20 +10,29 @@ class MustacheView
 		$this->name = $name;
 	}
 	
-	public function __get($name)
+	public function __get($key)
 	{
-		if (empty($this->values[$name])) return false;
-		return $this->values[$name];
+		if (empty($this->values[$key])) return false;
+		return $this->values[$key];
 	}
 	
-	public function __set($name, $value)
+	public function __set($key, $value)
 	{
-		$this->values[$name] = $value;
+		if (is_object($value) && method_exists($value, '__toString')) 
+		{
+			$value = $value->__toString();
+		}
+		$this->values[$key] = $value;
 	}
 	
 	public function __toString()
 	{
 		return $this->render();
+	}
+	
+	public function __isset($key)
+	{
+		return (isset($this->values[$key]));
 	}
 	
 	public function render()

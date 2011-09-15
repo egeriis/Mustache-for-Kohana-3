@@ -793,7 +793,7 @@ class Mustache {
 			if (is_object($view)) {
 				if (method_exists($view, $tag_name)) {
 					return $view->$tag_name();
-				} else if ($view->$tag_name !== false) { // was originally an isset check
+				} else if (isset($view->$tag_name)) { // was originally an isset check
 					return $view->$tag_name;
 				}
 			} else if (is_array($view) && array_key_exists($tag_name, $view)) {
