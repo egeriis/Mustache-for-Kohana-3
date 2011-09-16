@@ -5,6 +5,8 @@
 
 It is dependent on the Mustache class by Justin Hileman <http://defunkt.github.com/mustache>. This class is included in this module, but remember to check for updates.
 
+##### Feature requests are very welcome!
+
 ### How to use
 
 1. Add `classes` to a folder of your choice in your `modules` directory
@@ -12,5 +14,11 @@ It is dependent on the Mustache class by Justin Hileman <http://defunkt.github.c
 3. Use `MustacheView::factory` or `new MustacheView` like you do with the default `View` class
 
 That's it folks!
+
+### Example
+
+	$view = MustacheView::factory('edit_user');
+	$view->username = 'Hello Kitty';
+	echo $view;
 
 #### Brought to you by <http://egeriis.me>
