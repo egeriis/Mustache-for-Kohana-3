@@ -15,10 +15,25 @@ It is dependent on the Mustache class by Justin Hileman <http://defunkt.github.c
 
 That's it folks!
 
-### Example
+### Examples
+
+#### Basic
+
+This is basic usage example. The MustacheView class is intended to work exactly like you use the regular Kohana 3 View class.
 
 	$view = MustacheView::factory('edit_user');
 	$view->username = 'Hello Kitty';
 	echo $view;
+
+#### Expose view data through JSON
+
+The `expose_data` method is practical for users who want to share both views and their data between Kohana and JavaScript front-end.
+
+	$view = MustacheView::factory('community/users');
+	$view->users = array(new User(1), new User(2));
+	
+	header("Content-Type: application/json" true);
+	exit(json_encode($view->expose_data()));
+
 
 #### Brought to you by <http://egeriis.me>
