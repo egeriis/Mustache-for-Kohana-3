@@ -41,6 +41,11 @@ class MustacheView
 		return $m->render($this->markup(), $this);
 	}
 	
+	public function expose_data()
+	{
+		return $this->values;
+	}
+	
 	protected function markup()
 	{
 		return file_get_contents(APPPATH . 'views/' . $this->name . '.ms');
