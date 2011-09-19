@@ -37,5 +37,6 @@ The `expose_data` method is practical for users who want to share both views and
 
 Extend your controller to `Controller_Mustache` to automatically expose your view data when HTTP request is made through AJAX.
 
+__Tip:__ Working with Kohana ORM can put some bumps on the road. See <examples/orm.php> to see how this can be resolved.
 
 #### Brought to you by <http://egeriis.me>
