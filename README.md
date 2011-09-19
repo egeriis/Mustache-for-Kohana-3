@@ -13,6 +13,8 @@ It is dependent on the Mustache class by Justin Hileman <https://github.com/bobt
 2. Load the module through `Kohana::modules` in your `application/bootstrap.php` file
 3. Use `MustacheView::factory` or `new MustacheView` like you do with the default `View` class
 
+__Note:__ Template files must be stored in `APPPATH/views` like your regular PHP templates.
+
 That's it folks!
 
 ## Examples
