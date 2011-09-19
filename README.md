@@ -35,5 +35,7 @@ The `expose_data` method is practical for users who want to share both views and
 	header("Content-Type: application/json" true);
 	exit(json_encode($view->expose_data()));
 
+Extend your controller to `Controller_Mustache` to automatically expose your view data when HTTP request is made through AJAX.
+
 
 #### Brought to you by <http://egeriis.me>
