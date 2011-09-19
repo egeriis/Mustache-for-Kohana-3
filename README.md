@@ -3,7 +3,7 @@
 
 `Mustache for Kohana 3` is a simple wrapper to easily implement Mustache within your Kohana 3 project. 
 
-It is dependent on the Mustache class by Justin Hileman <http://defunkt.github.com/mustache>. This class is included in this module, but remember to check for updates.
+It is dependent on the Mustache class by Justin Hileman <https://github.com/bobthecow/mustache.php>. This class is included in this module, but remember to check for updates.
 
 #### Feature requests are very welcome!
 
