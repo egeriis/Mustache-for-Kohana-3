@@ -1,13 +1,13 @@
 # Mustache for Kohana 3
-#### version 0.1.5
+### version 0.1.5
 
 `Mustache for Kohana 3` is a simple wrapper to easily implement Mustache within your Kohana 3 project. 
 
 It is dependent on the Mustache class by Justin Hileman <http://defunkt.github.com/mustache>. This class is included in this module, but remember to check for updates.
 
-##### Feature requests are very welcome!
+#### Feature requests are very welcome!
 
-### How to use
+## How to use
 
 1. Add `classes` to a folder of your choice in your `modules` directory
 2. Load the module through `Kohana::modules` in your `application/bootstrap.php` file
@@ -15,9 +15,9 @@ It is dependent on the Mustache class by Justin Hileman <http://defunkt.github.c
 
 That's it folks!
 
-### Examples
+## Examples
 
-#### Basic
+### Basic
 
 This is basic usage example. The MustacheView class is intended to work exactly like you use the regular Kohana 3 View class.
 
@@ -25,7 +25,7 @@ This is basic usage example. The MustacheView class is intended to work exactly 
 	$view->username = 'Hello Kitty';
 	echo $view;
 
-#### Expose view data through JSON
+### Expose view data through JSON
 
 The `expose_data` method is practical for users who want to share both views and their data between Kohana and JavaScript front-end.
 
