@@ -1,5 +1,5 @@
 # Mustache for Kohana 3
-#### version 0.1
+#### version 0.1.5
 
 `Mustache for Kohana 3` is a simple wrapper to easily implement Mustache within your Kohana 3 project. 
 
