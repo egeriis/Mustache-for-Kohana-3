@@ -41,4 +41,8 @@ Extend your controller to `Controller_Mustache` to automatically expose your vie
 
 __Tip:__ Working with Kohana ORM can put some bumps on the road. See [examples/orm.php](https://github.com/egeriis/Mustache-for-Kohana-3/blob/master/examples/orm.php) to see how this can be resolved.
 
+## License
+
+MIT License. See [LICENSE](https://github.com/egeriis/Mustache-for-Kohana-3/blob/master/LICENSE) for details.
+
 #### Brought to you by <http://egeriis.me>
