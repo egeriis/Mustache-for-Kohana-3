@@ -14,6 +14,7 @@ class Controller_Mustache extends Controller_Template
 	 * @var  MustacheView  Holds the current view
 	 */
 	public $view;
+	protected $data_cache = 'no-cache';
 	
 	/**
 	 * Check if the HTTP request is made through AJAX. If that's the case, it will 
@@ -38,6 +39,7 @@ class Controller_Mustache extends Controller_Template
 	protected function expose_view()
 	{
 		header('Content-Type: application/json', true);
+		header('Cache-Control: ' . $this->data_cache, true);
 		exit(json_encode($this->view->expose_data()));
 	}
 	
