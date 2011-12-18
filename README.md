@@ -1,9 +1,16 @@
 # Mustache for Kohana 3
-### version 0.1.5
+### version 0.2
 
 `Mustache for Kohana 3` is a simple wrapper to easily implement Mustache within your Kohana 3 project. 
 
 It is dependent on the Mustache class by Justin Hileman <https://github.com/bobthecow/mustache.php>. This class is included in this module, but remember to check for updates.
+
+## Features
+
+- Use Mustache for templates in your Kohana 3 project
+- Works like regular Kohana views
+- Automatically loads partials
+- Expose your view data for client side rendering
 
 #### Feature requests are very welcome!
 
@@ -13,7 +20,7 @@ It is dependent on the Mustache class by Justin Hileman <https://github.com/bobt
 2. Load the module through `Kohana::modules` in your `application/bootstrap.php` file
 3. Use `MustacheView::factory` or `new MustacheView` like you do with the default `View` class
 
-__Note:__ Template files must be stored in `APPPATH/views` like your regular PHP templates.
+__Note:__ Template files must be stored in `APPPATH/views` like your regular Kohana templates.
 
 That's it folks!
 
